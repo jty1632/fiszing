@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'Ubuntu Sans Mono';
+    src: url('../src/font/Ubuntu1.ttf');
+}
+
+* {
+    margin: 0;
+    font-family: 'Ubuntu Sans Mono';
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: .8fr 5fr;
+    height: 97%;
+    max-height: 97%;
+}
+
+/* flashcards **************************************************************************************/
+.flashcards {
+    height: 100%;
+    display: none;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav>div {
+    margin: 15px 10px;
+    border-radius: 7px;
+    background-color: #202020;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    cursor: pointer;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+    }
+}
+
+.nav>div:hover {
+    background-color: #fff4;
+    box-shadow: 0px 0px 24px 0px black;
+}
+
+.nav>div:first-child {
+    margin-left: 15px;
+}
+
+.nav>div:last-child {
+    margin-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 15px 0;
+    margin-top: 0;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.card {
+    perspective: 5000px;
+    background-color: transparent;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #202020;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 35px;
+    text-align: center;
+}
+
+.back {
+    transform: rotateX(180deg);
+}
+
+.cardTg {
+    transform: rotateX(180deg);
+}
+
+.activePage {
+    outline: 1px gray solid;
+}
+
+.cardLeftButt,
+.cardRightButt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: gray;
+}
+
+.cardLeftButt:hover,
+.cardRightButt:hover {
+    cursor: pointer;
+}
+
+@keyframes animR {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateX(28px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateX(8px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateX(2px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animL {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateX(-28px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateX(-8px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateX(-2px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animI {
+    0% {
+        animation-timing-function: ease-in;
+        transform: translateX(-10px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateX(10px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateX(-5px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateX(5px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateX(0);
+    }
+}
+
+.animR {
+    animation: animR 400ms ease 0s 1 normal forwards;
+}
+
+.animL {
+    animation: animL 400ms ease 0s 1 normal forwards;
+}
+.animI {
+    animation: animI 200ms ease 0s 1 normal forwards;
+}
+
+
+/* collections******************************************************************************************/
+.collections,
+.study,
+.test {
+    height: 100%;
+    background-color: #202020;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: auto;
+}
+
+.study,
+.test {
+    display: none;
+}
+
+.collectionsInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+tr:hover {
+    background-color: #fff4;
+    cursor: pointer;
+}
+
+tr {
+    font-size: 1.2rem;
+}
+
+td {
+    border: 1px solid white;
+    margin: 0;
+    padding: 10px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+.lista {
+    padding: 15px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formularz,
+.lista {
+    text-align: center;
+    overflow: auto;
+
+    p {
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload,
+.ButColl {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 9px;
+}
+.custom-file-upload:hover,
+.ButColl:hover{
+    background-color: #fff4;
+}
+
+/* TEST **************************************************************/
+
+.displaySett{
+    text-align: center;
+    margin: 30px;
+}
+
+#Dtest1{
+    display: none;
+}
+
+.testContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+#TdP1{
+    position: absolute; 
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Dstud1{
+    font-size: 1.2rem;
+}
+#Ti1, #Si1{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+#Pres1{
+    font-size: 1.2rem;
+}
+#Th1{
+    padding: 0 30px;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.sideL{
+    border-right: 1px gray solid;
+}
+.formularz > div{
+    font-size: 1.2rem;
+    input{
+        line-height: 1.2rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    text-align: left;
+}
+h2{
+    text-decoration: underline;
+    color: #AAA;
+}
+#Dres1{
+    display: none;
+}
+.lista{
+    overflow-y: auto;
+}
+#Sd1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#Sd2{
+    display: none;
+    text-align: center;
+}
+.innerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 30px;
+}
+#SdCon1{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 1.3rem;
+}
+#N1{
+    overflow: hidden;
+}

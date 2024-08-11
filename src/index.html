@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="style.css">
+  <title>Fiszing</title>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="configuration.js"></script>
+  <script type="text/javascript" src="test.js"></script>
+  <script type="text/javascript" src="collections.js"></script>
+  <script type="text/javascript" src="study.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="nav">
+      <div id="FC">
+        <div><img src="../src/img/fiszki.png" alt=""></div>
+        <div>FISZKI</div>
+      </div>
+      <div id="NC">
+        <div><img src="../src/img/nauka.png" alt=""></div>
+        <div>NAUKA</div>
+      </div>
+      <div id="TC">
+        <div><img src="../src/img/test.png" alt=""></div>
+        <div>TEST</div>
+      </div>
+      <div id="ZC">
+        <div><img src="../src/img/database.png" alt=""></div>
+        <div>ZESTAWY</div>
+      </div>
+    </div>
+    <div class="flashcards" id="F1">
+      <div class="card" id="Cm">
+        <div class="cardLeftButt" id="Bl">&#x276E;</div>
+        <div class="innerContent">
+          <div class="inner" id="Ci">
+            <div class="front" id="Cf">
+              <div class="cardInnerText">
+                Wybierz zestaw fiszek
+              </div>
+            </div>
+            <div class="back" id="Cb">
+              <div class="cardInnerText">
+                Wybierz zestaw fiszek
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardRightButt" id="Br">&#x276F;</div>
+      </div>
+    </div>
+    <div class="collections" id="Z1">
+      <div class="collectionsInner">
+        <div class="side sideL">
+          <div class="formularz">
+            <h2>Stwórz nowy zestaw:</h2>
+            <br>
+            <div>
+              Nazwa zestawu:
+              <input type="text" id="Fi0">
+              <br> <br>
+              Pytanie:
+              <input type="text" id="Fi1">
+              <br> <br>
+              Definicja:
+              <input type="text" id="Fi2">
+              <br> <br>
+            </div>
+            <button class="ButColl" id="Fb1">Następna</button>
+            <button class="ButColl" id="Fb2">Stwórz</button>
+          </div>
+        </div>
+        <div class="side">
+          <div class="lista">
+            <h2>Wczytane zestawy: </h2>
+            <br>
+            <table id="Tb1"></table>
+            <br>
+            <label for="Id1" class="custom-file-upload">Otwórz zestaw</label>
+            <input type="file" name="dir" id="Id1" accept=".json">
+            <button class="ButColl" id="Butt1">Otwórz folder źródłowy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="study" id="N1">
+      <div class="disable" id="Sd1">
+        <h2>Wybierz zestaw fiszek</h2>
+      </div>
+      <div class="innerContent">
+        <div id="Sd2">
+          <h1 id="Sh1"></h1>
+          <br> <br>  <br>
+          <p class="studyContent" id="SdCon1"></p>
+          <br> 
+          <input type="text" id="Si1">
+          <br>
+        </div>
+      </div>
+
+    </div>
+    <div class="test" id="T1">
+      <div class="testContent">
+        <div class="displaySett" id="Dstud1">
+          <h2>Wybierz tryb testu: </h2>
+          <br>
+          <button class="ButColl" id="ButtT1">SZYBKI</button>
+          <button class="ButColl" id="ButtT2">NORMALNY</button>
+          <button class="ButColl" id="ButtT3">PEŁNY</button>
+          <br> <br>
+          <p id="Tp1">Nie wybrano zestawu fiszek</p>
+        </div>
+        <div class="displayTest" id="Dtest1">
+          <h1 id="Th1"></h1>
+          <br>
+          <br>
+          <input type="text" name="answer" id="Ti1" autofocus>
+          <br>
+          <div id="TdP1"></div>
+        </div>
+        <div class="displayTest" id="Dres1">
+          <hr><br>
+          <p id="Pres1"></p>
+          <br>
+          <hr>
+          <br><br>
+          <button class="ButColl" id="Tres1">Nowy test</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
