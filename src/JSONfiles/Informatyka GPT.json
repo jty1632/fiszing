@@ -1,0 +1,198 @@
+[
+    {
+        "frontText": "Kto jest twórcą języka programowania Python?",
+        "backText": "Guido van Rossum"
+    },
+    {
+        "frontText": "Co oznacza skrót HTML?",
+        "backText": "HyperText Markup Language"
+    },
+    {
+        "frontText": "Jaki jest podstawowy protokół używany do przesyłania stron internetowych?",
+        "backText": "HTTP"
+    },
+    {
+        "frontText": "W którym roku powstał system operacyjny Linux?",
+        "backText": "1991"
+    },
+    {
+        "frontText": "Kto jest twórcą systemu operacyjnego Linux?",
+        "backText": "Linus Torvalds"
+    },
+    {
+        "frontText": "Co oznacza skrót CSS?",
+        "backText": "Cascading Style Sheets"
+    },
+    {
+        "frontText": "Jaki jest pełny tytuł książki 'The Art of Computer Programming'?",
+        "backText": "Donald Knuth"
+    },
+    {
+        "frontText": "Co oznacza skrót SQL?",
+        "backText": "Structured Query Language"
+    },
+    {
+        "frontText": "Który język programowania jest najczęściej używany do tworzenia aplikacji na Androida?",
+        "backText": "Java"
+    },
+    {
+        "frontText": "Co to jest 'chmura obliczeniowa'?",
+        "backText": "Cloud Computing"
+    },
+    {
+        "frontText": "Jaka jest najpopularniejsza baza danych NoSQL?",
+        "backText": "MongoDB"
+    },
+    {
+        "frontText": "Co oznacza skrót JSON?",
+        "backText": "JavaScript Object Notation"
+    },
+    {
+        "frontText": "Kto jest twórcą języka programowania C++?",
+        "backText": "Bjarne Stroustrup"
+    },
+    {
+        "frontText": "Co oznacza skrót IDE?",
+        "backText": "Integrated Development Environment"
+    },
+    {
+        "frontText": "Co to jest 'git'?",
+        "backText": "System kontroli wersji"
+    },
+    {
+        "frontText": "Kto stworzył pierwszą stronę internetową?",
+        "backText": "Tim Berners Lee"
+    },
+    {
+        "frontText": "Co oznacza skrót API?",
+        "backText": "Application Programming Interface"
+    },
+    {
+        "frontText": "Jaki język jest używany do stylizacji stron internetowych?",
+        "backText": "CSS"
+    },
+    {
+        "frontText": "Co to jest 'algorytm'?",
+        "backText": "Zestaw instrukcji do rozwiązania problemu"
+    },
+    {
+        "frontText": "Który język programowania jest znany ze swojej prostoty i czytelności?",
+        "backText": "Python"
+    },
+    {
+        "frontText": "Co oznacza skrót LAN?",
+        "backText": "Local Area Network"
+    },
+    {
+        "frontText": "Jaka jest różnica między RAM i ROM?",
+        "backText": "RAM jest pamięcią ulotną, a ROM jest pamięcią trwałą"
+    },
+    {
+        "frontText": "Co to jest 'framework' w programowaniu?",
+        "backText": "Struktura wspomagająca tworzenie i rozwijanie aplikacji"
+    },
+    {
+        "frontText": "Kto jest twórcą języka programowania Java?",
+        "backText": "James Gosling"
+    },
+    {
+        "frontText": "Co oznacza skrót HTTP?",
+        "backText": "HyperText Transfer Protocol"
+    },
+    {
+        "frontText": "Co to jest 'machine learning'?",
+        "backText": "Dziedzina sztucznej inteligencji zajmująca się tworzeniem algorytmów uczących się na podstawie danych"
+    },
+    {
+        "frontText": "Jaki jest najpopularniejszy system zarządzania bazami danych?",
+        "backText": "MySQL"
+    },
+    {
+        "frontText": "Co oznacza skrót URL?",
+        "backText": "Uniform Resource Locator"
+    },
+    {
+        "frontText": "Co to jest 'big data'?",
+        "backText": "Bardzo duże zbiory danych, które są trudne do przetwarzania za pomocą tradycyjnych narzędzi"
+    },
+    {
+        "frontText": "Kto jest twórcą języka programowania Ruby?",
+        "backText": "Yukihiro Matsumoto"
+    },
+    {
+        "frontText": "Co oznacza skrót TCP/IP?",
+        "backText": "Transmission Control Protocol/Internet Protocol"
+    },
+    {
+        "frontText": "Co to jest 'blockchain'?",
+        "backText": "Zdecentralizowana baza danych, która jest zabezpieczona kryptograficznie"
+    },
+    {
+        "frontText": "Jaki jest główny język programowania używany w tworzeniu stron internetowych?",
+        "backText": "JavaScript"
+    },
+    {
+        "frontText": "Co oznacza skrót GPU?",
+        "backText": "Graphics Processing Unit"
+    },
+    {
+        "frontText": "Co to jest 'open source'?",
+        "backText": "Oprogramowanie, którego kod źródłowy jest dostępny publicznie"
+    },
+    {
+        "frontText": "Kto jest twórcą systemu operacyjnego Windows?",
+        "backText": "Microsoft"
+    },
+    {
+        "frontText": "Co oznacza skrót XML?",
+        "backText": "Extensible Markup Language"
+    },
+    {
+        "frontText": "Co to jest 'firewall'?",
+        "backText": "Zabezpieczenie sieci przed nieautoryzowanym dostępem"
+    },
+    {
+        "frontText": "Co oznacza skrót SEO?",
+        "backText": "Search Engine Optimization"
+    },
+    {
+        "frontText": "Co to jest 'virtual machine'?",
+        "backText": "Oprogramowanie, które emuluje komputerowy system operacyjny"
+    },
+    {
+        "frontText": "Co oznacza skrót PHP?",
+        "backText": "PHP: Hypertext Preprocessor"
+    },
+    {
+        "frontText": "Kto jest twórcą języka programowania Perl?",
+        "backText": "Larry Wall"
+    },
+    {
+        "frontText": "Co to jest 'cybersecurity'?",
+        "backText": "Praktyka ochrony systemów komputerowych i sieci przed cyfrowymi atakami"
+    },
+    {
+        "frontText": "Co oznacza skrót DNS?",
+        "backText": "Domain Name System"
+    },
+    {
+        "frontText": "Co to jest 'scalability' w kontekście oprogramowania?",
+        "backText": "Zdolność systemu do obsługi zwiększonego obciążenia"
+    },
+    {
+        "frontText": "Co oznacza skrót IoT?",
+        "backText": "Internet of Things"
+    },
+    {
+        "frontText": "Co to jest 'deep learning'?",
+        "backText": "Podzbiór machine learning wykorzystujący sieci neuronowe z wieloma warstwami"
+    },
+    {
+        "frontText": "Kto jest twórcą języka programowania Swift?",
+        "backText": "Apple Inc."
+    },
+    {
+        "frontText": "Co oznacza skrót VPN?",
+        "backText": "Virtual Private Network"
+    }
+]
